@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+
+            recomendação oficial é usar px e em pois em é dado como a porcentagem do tamanho da fonte padrão, se adequando a tela em que for colocado.
+            */
+
+            font-size: 1em ;
+            font-weight: bolder ;
+            font-style: italic;
+            text-decoration: underline;
+
+            /* weight width height*/
+            /* lighter normal bold bolder*/
+        }
+
+        h1  {
+            /*font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3m;
+            font-style: italic;*/
+
+
+            /* shorthand font. mãozinha para condenssar o tipo de fonte, o peso, tamanho e estilo
+            
+            - font-style -> font-weight -> font-size -> font-family */
+            font: italic bolder 3m 'Work Sans', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, vero! Eum eius mollitia harum. Ex incidunt deleniti minus laborum, ad impedit consectetur, voluptate illum corrupti quo quibusdam! Optio, pariatur quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi magni consequuntur sint provident assumenda inventore voluptates accusamus animi tempora consequatur ad, iste doloremque necessitatibus eius cumque possimus incidunt reprehenderit sed? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum delectus asperiores officia eos quaerat unde quibusdam! Quo earum velit quibusdam vero modi. Obcaecati consequuntur quasi placeat ipsa consectetur molestias molestiae.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat distinctio ipsa, asperiores consequuntur hic sed unde eaque, quia nulla excepturi corporis, blanditiis non quas omnis deleniti dolor. Facere, quia delectus.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et quasi odio nemo! Rerum vero quia fugit voluptatum ea minima sit quam porro voluptates. Nam maiores odio fuga cum hic recusandae?</p>
+</body>
+</html>
