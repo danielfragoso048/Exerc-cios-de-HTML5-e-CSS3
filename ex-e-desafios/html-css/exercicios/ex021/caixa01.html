@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /*elemnto do tipo box-level*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            /*shorthand da borda é border vindo com (largura/ estilo/ cor)
+            
+            
+            shorthand do padding é padding: vindo com ( topo, direita , baixo e esquerda, mas se as 4 forem iguais é só colocar o numero da primeira que vai valer para todas. Ou você pode colocar duas medidas e o de cima e o de baixo vao ser o primeiro e o da direita e o da esquerda vão ser o segundo.
+            
+            
+            shorthand da margin é margin: vindo com ( cima, direita, baixo e esquerda, e se você quiser centralizar a margin é só colocar o segundo e quarto valores auto)
+            
+            shorthand de outline é outline: vindo com a (largura, estilo e cor)*/
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+           outline-width: 5px;
+           outline-style: dashed;
+           outline-color: salmon;
+
+            /*para  a margin ficar no meio é necessario usar a margin: auto se for uma caixa, se for um texto usa-se text align center*/
+
+            /*começar o padding e a margin por cima e ir indo no sentido horário de um relógio*/
+        }
+
+        a { /*elemento do tipo inline-level*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        /* os principais tipos de margem que existe sao (border-style) solid (normal), double( duplicada) , dotted ( com pontos) groove ( em 3d ) e dashed ( pulada de traços em traços )*/
+    </style>
+</head>
+<body>
+    <!--display: block, é um display que configura uma box level (caixa que ocupa a linha inteira do navegador e depois pula de linha)
+   e tambem existe o modelo inline block que configura uma inline box ( caixa que ocupa só uma parte da linha e depois continua o conteúdo) 
+
+
+   para transformar uma caixa em inline é só usar o comando display: inline , mas que por sua vez não te permite trocar a altura nem a largura
+
+   para transformar uma caixa em box-line é só usar o comando display: block
+
+   existe o comando inline block, que serve para tranformar uma caixa em um inline com caracteristicas de um box-level ( colocar altura largura)
+-->
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos tambem são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona. </p>
+</body>
+</html>

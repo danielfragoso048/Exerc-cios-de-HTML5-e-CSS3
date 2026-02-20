@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+    
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+           box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+
+            /*quando trabalhar com sombras usa-se a tag box-shadow e ponha a largura da sombra (direita), a altura ( pra baixo) o blur e a cor da sombra, sendo que, caso os 2 valores iniciais forem negativos a sombra vai para o outro lado*/
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.336);
+
+
+            /*border radius altera a borda da box deixando ela mais arredondada, você pode colocar um valor só, que vale pra todos os outros valores, ou colocar a (borda superior esquerda, direita, inferior direita, e inferior esquerda) ou voce pode escolher 2 valores que vão valer para os lados alternadamente */
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(155, 153, 153);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>   <!--Nav é utilizado pra criação de menus
+    
+         Header é utilizado pra criação de cabeçalhos
+    
+    Main é utilizado para se referir ao seu conteudo principal.
+    
+    section são seções dentro do conteúdo principal e dentro das seçoes voce pode colocar os titulos de cada seção e os paragrafos das seçoes.
+
+    Article se usa quando se tem conteúdos dentro das seçoes. 
+
+    Aside se usa para escrever algo ao lado. 
+    
+    -->
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste accusantium impedit, dolorem eligendi ex sint cumque aspernatur dicta. Est at repellat a tempore veritatis maxime ipsam eos, perspiciatis beatae dolorem.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
