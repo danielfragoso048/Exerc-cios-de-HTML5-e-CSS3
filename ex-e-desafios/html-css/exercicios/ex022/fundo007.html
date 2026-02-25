@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative;     /*para centralizar na vertical é necessário colocar a posição do boxer como relativo ( por mais que não precise por ja ser implicito) */
+            height: 96vh;
+            background-color: purple;
+        }
+
+        #conteúdo {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            position: absolute;   /*ja o conteudo possui o posicionamento absoluto, permitindo colocar as  distancias da borda de uma caixa a outra ( left , right , top e bottom)  */
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);   /*reponsável por mover a caixa conteúdo, fazendo com que ela vá para direita e para baixo se os dois valores forem positivos, e o inverso se forem negativos. e se você colocar - 50% para os dois valores ele centraliza a imagem*/
+            
+        }
+    </style>
+</head>
+<body>
+    <section id="container">       <!--quando se centraliza a caixa verticalmente é necessario a preseça de um container ( o que vai conter o conteudo) e de um conteúdo ( o que vai ser contido)-->
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
