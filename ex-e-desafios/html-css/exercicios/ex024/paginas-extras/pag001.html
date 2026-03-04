@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas Responsivas</title>
+    <title>Site de Teste </title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+           
         }
 
         table {
@@ -28,20 +30,17 @@
             background-color: rgb(228, 228, 228);
         }
 
-        div#container {  /* conteudo que transborda, tanto verticalmente quanto horizontalmente usa-se overflow y ou x auto para gerar o scroll do mouse
+        div#container {
+             overflow-x: auto ;
+        }
 
-            ja o scroll exibe a  barra de rolagem independente da situação
-            
-            tendo que colocar a tabela dentro de uma div para que ela possa ser alterada por estar dentro de uma level box*/
-            overflow-x:auto ;
+        tr:nth-child(odd) {
+            background-color: white;
         }
     </style>
 </head>
 <body>
-    <h1>Tabelas em telas pequenas</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ab similique corrupti excepturi deleniti necessitatibus? Nisi sapiente quae consequuntur, aliquid eum, eligendi, officia eveniet voluptates ratione ullam fuga veritatis vero!</p>
-    <div id="container">
-        <table>
+    <table>
             <caption>Tabelas responsivas</caption>
             <thead>
                 <tr>
@@ -168,6 +167,5 @@
                 </tr>
             </tbody>
         </table>
-    </div>
 </body>
 </html>
