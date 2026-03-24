@@ -12,12 +12,23 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p> <!--input text faz com que a se crie a caixinha para colocar texto-->
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form action="cadastro.php" method="POST" autocomplete="off" >
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p> <!--input text faz com que a se crie a caixinha para colocar texto-->
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p> <!--esse formulario serve para criar um  botão de enviar o formulário com o value sendo o que aparece escrito no botão
         
-        é importante que haja uma ligação entre o nome que vai aparecer ao lado da caixa de texto e a caixa de texto para o navegador reconhecer o formulário-->
+        todo o input pode ter um nome ( usado para html) e um id ( usado para linguagens como java script)
+        usado principalmente nos campos de preenchimento 
+
+        colocar o id no for do label
+
+        é importante que haja uma ligação entre o nome que vai aparecer ao lado da caixa de texto e a caixa de texto para o navegador reconhecer o formulário
+        
+        caso não colocar o method o padrao é o get que faz com que o que esta escrito na caixa do formulario apareça na url. (usar quando os dados não forem sensíveis, pode enviar até 3000 bytes, que são aproximadamente 3000 letras, não pode usar get quando for campos sensiveis, ou envios de fotos e qualquer outro tipo de arquivo).
+
+        E o outro método é post, que não faz aparecer os dados da url, mas acaba aparecendo se o dado for analizado no google preview (usado para tranmitir dados sensiveis, com mais de 3000 bytes, e envios de arquivos)-->
+
+
     </form>
 </body>
 </html>

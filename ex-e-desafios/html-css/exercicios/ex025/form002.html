@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> <!-- pode usar divs ao em vez de parágrafos, o type paassword faz com que a senha apareça com asteriscos, Já o reset serve para resetar o que esta escrito
+    
+    caso colocar o atributo required faz com que o preeenchimento do campo seja obrigatorio
+    
+    ja o minlenght indica o tamanho minimo do que está escrito no campo, ja o maxlenght indica a quantidade maxima de caracteres
+    
+    já o size indica quantas letras a caixa vai aparecer
+    
+    já o placeholder indica o que vai aparecer em cima do campo de preenchimento
+    
+    o autocomplete off desliga o possivel preenchimento de coisas que foram digitadas anteriormente ( e colocar o autocomplete no input faz com que ele classifique o tipo de preenchimento possivel que pode ter ).
+    new password é quando você está em uma tela de criação de uma senha, ja o current password é quando você quer colocar uma senha já existente. usados para o navegador entender o que sugerir para preencher o campo-->
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="POST"></form>
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="nome do usuario" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" autocomplete="">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+</body>
+</html>
