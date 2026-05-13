@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sxmas" id="isxmas" value="M"> <label for="isxmas">Masculino</label><br>
+            <input type="radio" name="sxfem" id="isxfem" checked value="F"> <label for="isxfem">Feminino</label>
+        </fieldset>
+
+        <!--quando coloca o mesmo nome nos botões de radio ele permite que voce escolha um ou outro alternadamente, e se voce quiser que ja apareça marcado alguma opção voce coloca dentro do input de um componente checked-->
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas"> Basquete</label> <br>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
+        </fieldset>
+        
+
+        <!--se voce colocar um label em um formulario de checkbox ele vai ser preenchido quando voce clicar na palavra devido ao texto estar ligado ao campo de preenchimento por causa do label-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
